@@ -1,17 +1,22 @@
 import React from 'react';
 
-// State Only
-// import ToDo from './components/todo/todo.js';
+import Shopping from './shopping.js';
+import Todo from './todo.js';
+import TodoList from './todo-list.js';
 
-// API Connected (Live Data)
-import ToDo from './components/todo/todo-connected.js';
+import './app.scss';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <>
-        <ToDo />
-      </>
-    );
-  }
+function App(props) {
+  return (
+    <section>
+      <div>
+        <Todo />
+      </div>
+      <div>
+        <TodoList />
+      </div>
+    </section>
+  );
 }
+
+export default App;
